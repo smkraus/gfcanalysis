@@ -57,7 +57,7 @@ download_tile <- function(tile_url, local_path) {
 download_tiles <- function(tiles, output_folder,
                            images=c('treecover2000', 'gain', 
                                     'lossyear', 'datamask'),
-                           data_year=2015) {
+                           data_year=2017) {
     stopifnot(all(images %in% c('treecover2000', 'gain', 'lossyear', 
                                 'datamask', 'first', 'last')))
     if (!file_test('-d', output_folder)) {
