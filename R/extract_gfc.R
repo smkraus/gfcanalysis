@@ -5,7 +5,7 @@
 make_tile_mosaic <- function(aoi, data_folder, data_year, filename="",
                              stack="change", ...) {
     if (stack == 'change') {
-        image_names <- c('treecover2000', 'loss', 'gain', 'lossyear', 
+        image_names <- c('treecover2000', 'gain', 'lossyear', 
                          'datamask')
         band_names <- image_names
     } else if (stack == 'first') {
@@ -118,7 +118,7 @@ scale_toar <- function(x, ...) {
 #' with LZW compression.
 #'
 #' The \code{stack} option can be "change" (the default), "first", or "last".  
-#' When set to "change", the forest change layers (treecover2000, loss, gain, 
+#' When set to "change", the forest change layers (treecover2000, gain, 
 #' lossyear, and datamask) will be extracted for the given \code{aoi}. The 
 #' "first" and "last" options will mosaic the 2000 or last year composite top 
 #' of atmosphere (TOA) reflectance images (respectively).

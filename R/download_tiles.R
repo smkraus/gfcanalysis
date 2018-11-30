@@ -45,8 +45,8 @@ download_tile <- function(tile_url, local_path) {
 #' product tiles to download, as calculated by the \code{calc_gfc_tiles} 
 #' function.
 #' @param output_folder the folder to save output data in
-#' @param images which images to download. Can be any of 'treecover2000', 
-#' 'loss', 'gain', 'lossyear', 'datamask', 'first', and 'last'.
+#' @param images which images to download. Can be any of 'treecover2000',
+#'  'gain', 'lossyear', 'datamask', 'first', and 'last'.
 #' @param data_year which version of the Hansen data to use
 #' @examples
 #' \dontrun{
@@ -55,10 +55,10 @@ download_tile <- function(tile_url, local_path) {
 #' download_tiles(tiles, output_folder)
 #' }
 download_tiles <- function(tiles, output_folder,
-                           images=c('treecover2000', 'loss', 'gain', 
+                           images=c('treecover2000', 'gain', 
                                     'lossyear', 'datamask'),
                            data_year=2015) {
-    stopifnot(all(images %in% c('treecover2000', 'loss', 'gain', 'lossyear', 
+    stopifnot(all(images %in% c('treecover2000', 'gain', 'lossyear', 
                                 'datamask', 'first', 'last')))
     if (!file_test('-d', output_folder)) {
         stop('output_folder does not exist')
