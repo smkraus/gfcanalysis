@@ -82,11 +82,11 @@ download_tiles <- function(tiles, output_folder,
         } else {
             max_y <- paste0(sprintf('%02i', max_y), 'N')
         }
-        file_root <- paste0('Hansen_GFC', data_year, '_')
+        file_root <- paste0('Hansen_GFC-2017-v1.5_')
         file_suffix <- paste0('_', max_y, '_', min_x, '.tif')
         filenames <- paste0(file_root, images, file_suffix)
 
-        tile_urls <- paste0(paste0('http://commondatastorage.googleapis.com/earthenginepartners-hansen/GFC', data_year, '/'), filenames)
+        tile_urls <- paste0(paste0('https://storage.googleapis.com/earthenginepartners-hansen/GFC-2017-v1.5/'), filenames)
         local_paths <- file.path(output_folder, filenames)
 
         for (i in 1:length(filenames)) {
