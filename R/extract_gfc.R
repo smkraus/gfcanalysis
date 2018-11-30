@@ -146,7 +146,7 @@ scale_toar <- function(x, ...) {
 extract_gfc <- function(aoi, data_folder, to_UTM=FALSE, stack="change", 
                         data_year=2015, ...) {
     if (stack == 'change') {
-        band_names <- c('treecover2000', 'loss', 'gain', 'lossyear', 
+        band_names <- c('treecover2000', 'gain', 'lossyear', 
                         'datamask')
     } else if (stack == 'first') {
         band_names <- c('Band3', 'Band4', 'Band5', 'Band7')
