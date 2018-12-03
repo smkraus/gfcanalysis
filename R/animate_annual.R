@@ -121,7 +121,7 @@ plot_gfc <- function(fchg, aoi, title_string='',
 animate_annual <- function(aoi, gfc_stack, out_dir=getwd(), 
                            out_basename='gfc_animation', site_name='', 
                            type='html', height=3, width=3, dpi=300,
-                           data_year=2015) {
+                           data_year=2017) {
     verify_layer_count(gfc_stack, data_year)
 
     if (!file_test('-d', out_dir)) {
